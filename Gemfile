@@ -14,6 +14,8 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-sass'
 # Use stripe for e-commerce payments
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+# Use figaro for securely managing credentials
+gem 'figaro', '~> 0.7.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
