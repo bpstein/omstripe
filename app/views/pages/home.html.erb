@@ -64,7 +64,7 @@
       </ul>
   </aside>
 </section>
-
+</div>
 
 
 <footer id="site-footer">
@@ -76,24 +76,30 @@ Made by <a href="http://onemonth.com" target="_blank">
 
 <!-- MODAL -->
 <div class="modal fade" id="author-modal">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-  <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span>About the Teacher</h4>
-</div>
-<div class="modal-body clearfix">
-      <div id="modal-left" class="pull-left">
-          <p><strong><%= @product.author %></strong></p>
-          <%= @product.author_description %>
-          
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          <span class="glyphicon glyphicon-user"></span>
+          About the Teacher
+        </h4>
       </div>
-      <div id="modal-right" class="pull-right">
-      <%= image_tag(@product.author_image_name, alt:@product.author) %>
-
+      <div class="modal-body clearfix">
+        <div id="modal-left" class="pull-left">
+          <p><strong>
+            <%= @product.author %>
+          </strong></p>
+            <%= @product.author_description %>
+        </div>
+        <div id="modal-right" class="pull-right">
+          <%= image_tag(@product.author_image_name, alt:@product.author) %>
+        </div>
       </div>
-</div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div> 
